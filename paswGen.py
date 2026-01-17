@@ -1,12 +1,14 @@
 import itertools;
 
-characters = "abc";
+characters = "abc123";
 min_length = 2;
 max_length = 4;
 
-for length in range(min_length, max_length + 1):
+with open(filename, "w") as file:
+    for length in range(min_length, max_length + 1):
 
-    for combo in itertools.product(characters, repeat=length):
-        password = "" .join(combo);
+        for combo in itertools.product(characters, repeat=length):
+            password = "" .join(combo);
+            file.write(password + \n);
 
-print(password);
+print("wordlist générée avec succès !");

@@ -3,7 +3,7 @@ import itertools;
 
 #Chaîne de caractères utilisée pour générer les mots de passe
 #Chaque caractère sera combiné avec les autres
-characters = "abc123";
+characters = "abcd123'";
 #Longueur min des MP générés
 min_length = 2;
 #Longueur max des MP générés

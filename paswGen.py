@@ -22,7 +22,7 @@ with open(filename, "w") as file:
         #repeat=length indique le nb de caractères par combinaison
         for combo in itertools.product(characters, repeat=length):
             #combo est un tuple, par ex :('a', '1', 'b')
-            #join() permet de transformer ce tuple en une chaîne de caractère
+            #join() p ermet de transformer ce tuple en une chaîne de caractère
             password = "" .join(combo);
             #On écrit le MP ds un fichier
             file.write(password + "\n");

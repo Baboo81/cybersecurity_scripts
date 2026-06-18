@@ -1,11 +1,11 @@
 import subprocess  # Permet d'exécuter des commandes systeme
-import platform    # Permet de détecter le système d'exploitation
+import platform    # Permet de détècter le système d'exploitation
 import json        # Pour stocker les informations dans un fichier JSON
 
-# Base du réseau local (réseau 192.168.1.0/24)
+# Base du réseau local; dans ce cas, ça sera le réseau domestique  (réseau 192.168.1.0/24)
 network = "192.168.0."
 
-# Liste qui contiendra les IP actives
+# Liste qui comportera les IP actives
 active_hosts = []
 
 # Détection du système d'exploitation (Windows / Linux / macOS)

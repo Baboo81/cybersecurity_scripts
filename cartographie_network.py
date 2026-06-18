@@ -1,4 +1,4 @@
-import subprocess  # Permet d'exécuter des commandes système
+import subprocess  # Permet d'exécuter des commandes systeme
 import platform    # Permet de détecter le système d'exploitation
 import json        # Pour stocker les informations dans un fichier JSON
 
@@ -27,7 +27,7 @@ for i in range(1, 255):
         # -c 1 → 1 paquet
         # -W 1 → timeout (en secondes)
 
-    # Exécution de la commande ping sans afficher la sortie 
+    # Exécution de la commande ping sans afficher la sortie  
     result = subprocess.run(
         command,
         stdout=subprocess.DEVNULL,

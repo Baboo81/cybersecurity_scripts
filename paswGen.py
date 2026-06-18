@@ -15,16 +15,16 @@ filename = "wordlist.txt";
 #'with' garantit que le fichier sera bien fermé automatiquement
 with open(filename, "w") as file:
     #Boucle sur les longueurs possibles 
-    #max_length + 1 car exclut la borne supérieure
+    #max_length + 1 exclu exclut la borne supérieure
     for length in range(min_length, max_length + 1):
-        #itertools génère toutes les combinaisons possibles
+        #itertools ; génère toutes les combinaisons possibles
         #des caractères pour une longueur donnée
         #repeat=length indique le nb de caractères par combinaison
         for combo in itertools.product(characters, repeat=length):
             #combo est un tuple, par ex :('a', '1', 'b')
-            #join() p ermet de transformer ce tuple en une chaîne de caractère
+            #join() permet de transformer ce tuple en une chaîne de caractère
             password = "" .join(combo);
-            #On écrit le MP ds un fichier
+            #On écrit le MP dans un fichier
             file.write(password + "\n");
 
 print("wordlist générée avec succès !");
